@@ -3,4 +3,8 @@
 <p>Name: <%= @pet.name %></p>
 <p>Breed: <%= @pet.breed %></p>
 <img src=<%=@pet.image%> width="500" height="500">
+
+<%= link_to "Edit pet", edit_pet_path(@pet) %>
+
+
 <a href="/pets">Back to all pets</a>

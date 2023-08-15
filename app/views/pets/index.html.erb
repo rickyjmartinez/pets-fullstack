@@ -4,6 +4,9 @@
   <p>Name: <%= pet.name %></p>
   <p>Breed: <%= pet.breed %></p>
   <img src=<%=pet.image%> width="500" height="500" >
-  <a href="/pets/<%= pet.id %>">More info</a>
+  <%= link_to "More Info", pet %>
 <% end %>
+
+
+<%= link_to "New pet", new_pet_path %>
 
