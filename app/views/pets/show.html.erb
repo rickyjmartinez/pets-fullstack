@@ -6,5 +6,9 @@
 
 <%= link_to "Edit pet", edit_pet_path(@pet) %>
 
+<%= link_to "Destroy pet", pet_path(@pet), data: {turbo_method: :delete} %>
+
 
 <a href="/pets">Back to all pets</a>
+
+
